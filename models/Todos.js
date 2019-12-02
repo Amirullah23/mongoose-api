@@ -11,6 +11,11 @@ const todoSchema = new Schema({
         required: true,
         default: false
     },
+    email: {
+        type: String,
+        required: true
+
+    },
     user: {
         type: Schema.Types.ObjectId,
         ref: "users"
